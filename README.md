@@ -49,26 +49,26 @@ Test Task  is developed using Selenium-Cucumber-java.
                 <ul class="nested">
                     <li><span class="caret">framework</span></li>
                     <ul class="nested">
-                        <li><span class="caret"><strong>api</strong> - API execution library</span></li>
-                        <li><span class="caret"><strong>datacontext</strong> - Test data sharing between scenario steps</span></li>
-                        <li><span class="caret"><strong>log</strong> - Execution log</span></li>
-                        <li><span class="caret"><strong>reader</strong> - Read properties file</span></li>
-                        <li><span class="caret"><strong>report</strong> - Report management</span></li>
-                        <li><span class="caret"><strong>selenium</strong> - Intialize webdriver and related selenium operations</span></li>
-                        <li><span class="caret"><strong>utils</strong> - Generic utilities</span></li>
+                        <li><span class="caret"><strong>api: </strong>API execution library</span></li>
+                        <li><span class="caret"><strong>datacontext: </strong>Test data sharing between scenario steps</span></li>
+                        <li><span class="caret"><strong>log: </strong>Execution log</span></li>
+                        <li><span class="caret"><strong>reader: </strong>Read properties file</span></li>
+                        <li><span class="caret"><strong>report: </strong>Report management</span></li>
+                        <li><span class="caret"><strong>selenium: </strong>Intialize webdriver and related selenium operations</span></li>
+                        <li><span class="caret"><strong>utils: </strong>Generic utilities</span></li>
                     </ul>
                     <li><span class="caret">test</span></li>
                     <ul class="nested">
-                        <li><span class="caret"><strong>or</strong> - application wise object locators</span></li>
-                        <li><span class="caret"><strong>stepdef</strong> - Step definition mapping for feature file</span></li>
-                        <li><span class="caret"><strong>testcases</strong> - Cucumber TestRunner</span></li>
+                        <li><span class="caret"><strong>or: </strong>Application wise object locators</span></li>
+                        <li><span class="caret"><strong>stepdef: </strong>Step definition mapping for feature file</span></li>
+                        <li><span class="caret"><strong>testcase: </strong>Cucumber TestRunner</span></li>
                     </ul>
                 </ul>
                 <li>resources</li>
                 <ul class="nested">
-	                <li><span class="caret"><strong>configuration</strong> - Test-bed and application properties</span></li>
-                    <li><span class="caret"><strong>features</strong> - Scenario feature files</span></li>
-                    <li><span class="caret"><strong>Log4j2</strong> - logging properties</span></li>
+	                <li><span class="caret"><strong>configuration: </strong>Test-bed and application properties</span></li>
+                    <li><span class="caret"><strong>features: </strong>Scenario feature files</span></li>
+                    <li><span class="caret"><strong>Log4j2: </strong>Execution log properties</span></li>
                 </ul>
             </ul>
         </li>
