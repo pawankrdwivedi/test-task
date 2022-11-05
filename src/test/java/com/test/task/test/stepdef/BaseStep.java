@@ -6,7 +6,7 @@ import com.test.task.framework.selenium.SeleniumActions;
 import com.test.task.framework.api.RestApi;
 
 public class BaseStep {
-    private ScenarioContext scenarioContext;
+    private final ScenarioContext scenarioContext;
     public RestApi api=new RestApi();
     public SeleniumActions selActions = new SeleniumActions();
 

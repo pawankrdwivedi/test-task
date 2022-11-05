@@ -44,37 +44,6 @@ public class ParaBankOR {
     /**
      * BILL PAYMENT CONFIRMATION PAGE
      */
-    public static final By PAYEE_CONFIMRATION_NAME=By.id("payeeName");
-    public static final By PAYEE_CONFIMRATION_AMOUNT=By.id("amount");
-
-
-
-
-
-
-
-
-
-    public static final By TRANSFER_FUNDS_HEADER=By.xpath("//h1[text()='Transfer Funds']");
-    public static final By TRANSFER_AMOUNT=By.name("amount");
-    public static final By TRANSFER_BUTTON=By.xpath("//input[@value='Transfer']");
-    public static final By TRANSFER_COMPLETE_HEADER=By.xpath("//h1[text()='Transfer Complete!']");
-
-    public static final By ACCOUNT_OVERVIEW_LINK=By.xpath("//a[text()='Accounts Overview']");
-    public static final By ACCOUNTS_OVERVIEW_HEADER=By.xpath("//h1[text()='Accounts Overview']");
-    public static final By ACCOUNTS_LINK=By.xpath("//a[contains(@href,'14343')]");
-    public static final By ACCOUNT_ACTIVITY_HEADER=By.xpath("//h1[text()='Account Activity']");
-    public static final By GO_BUTTON=By.xpath("//input[@value='Go']");
-
-    public static final By TRANSACTION_TABLE=By.id("transactionTable");
-    public static final By TABLE_ROW=By.xpath("//tr[@class='ng-scope']");
-    public static final By TABLE_COLUMN=By.xpath(".//td");//[contains(@class,'ng-scope')]");
-
-
-
-    public static final By LOG_OUT_LINK=By.xpath("//a[text()='Log Out']");
-
-
-
-
+    public static final By PAYEE_CONFIRMATION_NAME =By.id("payeeName");
+    public static final By PAYEE_CONFIRMATION_AMOUNT =By.id("amount");
 }

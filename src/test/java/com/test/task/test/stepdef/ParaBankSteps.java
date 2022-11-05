@@ -135,8 +135,8 @@ public class ParaBankSteps extends BaseStep {
     }
     @Then("verify payment amount and sender's name.")
     public void verifyTransaction() throws Exception {
-        String payeeName = selActions.getText(ParaBankOR.PAYEE_CONFIMRATION_NAME);
-        String amount = selActions.getText(ParaBankOR.PAYEE_CONFIMRATION_AMOUNT);
+        String payeeName = selActions.getText(ParaBankOR.PAYEE_CONFIRMATION_NAME);
+        String amount = selActions.getText(ParaBankOR.PAYEE_CONFIRMATION_AMOUNT);
         if (payeeName.toLowerCase().contains(((String) getScenarioContext().getContext(DataContext.PAYEE_NAME)).toLowerCase())) {
             if (amount.toLowerCase().contains((((String) getScenarioContext().getContext(DataContext.PAYEE_AMOUNT)).toLowerCase()))) {
                 ReportHelper.PASS("Amount: " + amount + " payed successfully to User: " + payeeName);

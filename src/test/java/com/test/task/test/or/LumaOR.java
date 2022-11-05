@@ -25,7 +25,6 @@ public class LumaOR {
      * SHOPPING_CART
      */
     public static final By SEARCH_ITEM=By.id("search");
-    public static final By SEARCH_OPTION=By.xpath("//li[@role='option']");
     public static final By PRODUCT_ITEM=By.xpath("//li[contains(@class,'product-item')]");
     public static final By ADD_TO_CART_BUTTON=By.id("product-addtocart-button");
     public static final By SHOPPING_CART_LINK=By.xpath("//a[text()='shopping cart']");
@@ -33,9 +32,6 @@ public class LumaOR {
     /**
      * SHIPPING ADDRESS
      */
-    public static final By SHIPPING_EMAIL=By.name("username");
-    public static final By SHIPPING_FIRST_NAME=By.name("firstname");
-    public static final By SHIPPING_LAST_NAME=By.name("lastname");
     public static final By COMPANY=By.name("company");
     public static final By STREET=By.name("street[0]");
     public static final By CITY=By.name("city");
@@ -45,7 +41,6 @@ public class LumaOR {
     /**
      * PLACE ORDER
      */
-    public static final By SELECT_CHECKBOX_PLACE_ORDER=By.name("billing-address-same-as-shipping");
     public static final By PLACE_ORDER=By.xpath("//button[@title='Place Order']");
 
 }

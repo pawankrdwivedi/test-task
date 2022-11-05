@@ -13,6 +13,7 @@ import java.util.List;
 
 public class SeleniumActions extends WebDriverFactory {
     static int MAX_TIME_WEB_ELEMENT = Integer.parseInt(ConfigReader.getPropertyValue("testbed", "maxTimeOutInstance"));
+
     public void openURL(String url) throws Exception {
         try {
             driver = getDriver();
@@ -89,10 +90,11 @@ public class SeleniumActions extends WebDriverFactory {
             FrameworkLogger.info("Element text on UI is: " + text);
             return text;
         } catch (Exception e) {
-            FrameworkLogger.fatal("Unable to get text for Element: " + ele.toString() + " " + Utils.printErrorMessage(e.getMessage()));
-            throw new Exception("Unable to get text for Element: " + ele.toString() + " " + Utils.printErrorMessage(e.getMessage()));
+            FrameworkLogger.fatal("Unable to get text for Element: "+ele+" "+Utils.printErrorMessage(e.getMessage()));
+            throw new Exception("Unable to get text for Element: "+ele+" "+Utils.printErrorMessage(e.getMessage()));
         }
     }
+
     public boolean isDisplayed(By by) throws Exception {
         boolean flag = false;
         try {
@@ -108,6 +110,7 @@ public class SeleniumActions extends WebDriverFactory {
             throw new Exception(Utils.printErrorMessage(e.getMessage()));
         }
     }
+
     public List<WebElement> findElementCollection(By by) throws Exception {
         List<WebElement> eleCollection;
         try {
@@ -119,13 +122,10 @@ public class SeleniumActions extends WebDriverFactory {
         FrameworkLogger.info("Element Collection identified in UI: " + by.toString());
         return eleCollection;
     }
-    public void selectInDropDown(By by,String text) throws Exception {
-        Select dropDown=new Select(findElement(by));
+
+    public void selectInDropDown(By by, String text) throws Exception {
+        Select dropDown = new Select(findElement(by));
         dropDown.selectByVisibleText(text);
-    }
-    public void selectInDropDownByIndex(By by,int index) throws Exception {
-        Select dropDown=new Select(findElement(by));
-        dropDown.selectByIndex(index);
     }
 
     public void quitBrowser() throws Exception {
@@ -139,7 +139,8 @@ public class SeleniumActions extends WebDriverFactory {
             throw new Exception(Utils.printErrorMessage(e.getMessage()));
         }
     }
-        public FluentWait<WebDriver> dynamicWait() {
+
+    public FluentWait<WebDriver> dynamicWait() {
         FluentWait<WebDriver> fluentWait;
         fluentWait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(MAX_TIME_WEB_ELEMENT))
@@ -148,15 +149,16 @@ public class SeleniumActions extends WebDriverFactory {
                 .ignoring(ElementNotInteractableException.class);
         return fluentWait;
     }
+
     public void waitTillElementIsClickable(By by) throws Exception {
         WebElement ele = null;
-        if(waitTillElementIsDisplayed(by)==true){
-            ele=findElement(by);
+        if (waitTillElementIsDisplayed(by)) {
+            ele = findElement(by);
         }
         dynamicWait().until(ExpectedConditions.elementToBeClickable(ele));
     }
 
-        public boolean waitTillElementIsDisplayed(By by) throws Exception {
+    public boolean waitTillElementIsDisplayed(By by) throws Exception {
         dynamicWait().until(ExpectedConditions.presenceOfElementLocated(by));
         return isDisplayed(by);
     }

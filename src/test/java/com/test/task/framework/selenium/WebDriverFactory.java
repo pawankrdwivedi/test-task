@@ -10,32 +10,28 @@ import org.openqa.selenium.WebDriver;
 public class WebDriverFactory {
     public static WebDriver driver;
 
-    public static WebDriver getDriver()
-    {
-        String browser= ConfigReader.getPropertyValue("testbed", "browser");
+    public static WebDriver getDriver() {
+        String browser = ConfigReader.getPropertyValue("testbed", "browser");
         try {
             switch (browser.toLowerCase().trim()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions options=new ChromeOptions();
+                    ChromeOptions options = new ChromeOptions();
                     options.setHeadless(false);
                     driver = new ChromeDriver(options);
                     break;
                 default:
-                    driver= WebDriverManager.chromedriver().create();
+                    driver = WebDriverManager.chromedriver().create();
             }
             driver.manage().window().maximize();
+        } catch (Exception e) {
+            FrameworkLogger.fatal("Unable to create " + browser.toUpperCase() + " Web-driver. " + e.getMessage());
         }
-        catch(Exception e)
-        {
-            FrameworkLogger.fatal("Unable to create "+browser.toUpperCase()+" Wedriver. "+e.getMessage());
-        }
-        FrameworkLogger.info(browser.toUpperCase()+" Wedriver created.");
+        FrameworkLogger.info(browser.toUpperCase() + " Web-driver created.");
         return driver;
     }
 
-    public static WebDriver returnDriverInstance()
-    {
+    public static WebDriver returnDriverInstance() {
         return driver;
     }
 }

@@ -31,7 +31,6 @@ public class LumaSteps extends BaseStep {
         getScenarioContext().setContext(DataContext.USER_1_STATE, jsonPathEvaluator.get("results[0].location.state"));
         getScenarioContext().setContext(DataContext.USER_1_ZIP_CODE, jsonPathEvaluator.get("results[0].location.postcode").toString());
         getScenarioContext().setContext(DataContext.USER_1_CELL, jsonPathEvaluator.get("results[0].cell"));
-
     }
     @When("user open Luma home page.")
     public void openLumaHomePage() throws Exception {

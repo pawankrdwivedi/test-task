@@ -1,7 +1,7 @@
 package com.test.task.framework.datacontext;
 
 public class TestContext {
-        private ScenarioContext scenarioContext;
+        private final ScenarioContext scenarioContext;
 
         public TestContext() {
         scenarioContext = new ScenarioContext();

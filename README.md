@@ -3,11 +3,11 @@ Purpose of this README is to provide overview of framework(created for test task
 to execute scenarios and view report.
 ### Overview: ###
 Test Task  is developed using Selenium-Cucumber-java.
-* WebDriverManager manages Selenium WebDriver (i.e., download, setup, and maintenance).
-* Cucumber is used to for behavior-driven development.
+* Web Driver Manager manages selenium web-driver (download, setup, and maintenance).
+* Cucumber drives behavior-driven development.
 * Courgette is used for parallel execution and cucumber report generation.
-* Cucumber Pico-container for test data sharing between steps.
-* Log4j for execution logs. 
+* Cucumber Pico-container provides test data sharing capability between steps.
+* Log4j generates execution logs. 
 ### Libraries Used: ###
 * Selenium
 * Web Driver Manager
@@ -19,22 +19,21 @@ Test Task  is developed using Selenium-Cucumber-java.
 * BDD framework (test scenarios written in business readable language{Gherkin}).
 * Test reporting using Courgette and Extent Reports.
 * Parallel execution(Feature/Scenario level).
-* Re-Execution of failed scenarios.
+* Re-execution of failed scenarios.
 * Test data sharing between scenario steps.
-
 ### Framework Description: ###
 <ul id="myUL">
     <li><span class="caret">results</span>
     <ul class="nested">
         <li><span class="caret">logs</span>
         <ul class="nested">
-            <li><span class="caret"><strong>TestExecution.log</strong> - Test execution logs</span></li>
+            <li><span class="caret"><strong>TestExecution.log: </strong>Test execution logs.</span></li>
         </ul>
         </li>
         <li><span class="caret">reports</span>
         <ul class="nested">
-            <li><span class="caret"><strong>courgette-extentreports</strong> - Extent report of last execution.</span></li>
-            <li><span class="caret"><strong>courgette-report</strong> - Courgette report of last execution.</span></li>
+            <li><span class="caret"><strong>courgette-extentreports: </strong>Extent report of last execution.</span></li>
+            <li><span class="caret"><strong>courgette-report: </strong>Courgette report of last execution.</span></li>
         </ul>
         </li>
     </ul>
@@ -49,33 +48,32 @@ Test Task  is developed using Selenium-Cucumber-java.
                 <ul class="nested">
                     <li><span class="caret">framework</span></li>
                     <ul class="nested">
-                        <li><span class="caret"><strong>api: </strong>API execution library</span></li>
-                        <li><span class="caret"><strong>datacontext: </strong>Test data sharing between scenario steps</span></li>
-                        <li><span class="caret"><strong>log: </strong>Execution log</span></li>
-                        <li><span class="caret"><strong>reader: </strong>Read properties file</span></li>
-                        <li><span class="caret"><strong>report: </strong>Report management</span></li>
-                        <li><span class="caret"><strong>selenium: </strong>Intialize webdriver and related selenium operations</span></li>
-                        <li><span class="caret"><strong>utils: </strong>Generic utilities</span></li>
+                        <li><span class="caret"><strong>api: </strong>API execution library.</span></li>
+                        <li><span class="caret"><strong>datacontext: </strong>Test data sharing between scenario steps.</span></li>
+                        <li><span class="caret"><strong>log: </strong>Execution log.</span></li>
+                        <li><span class="caret"><strong>reader: </strong>Read properties file.</span></li>
+                        <li><span class="caret"><strong>report: </strong>Report management.</span></li>
+                        <li><span class="caret"><strong>selenium: </strong>Intialize webdriver and related selenium operations.</span></li>
+                        <li><span class="caret"><strong>utils: </strong>Generic utilities.</span></li>
                     </ul>
                     <li><span class="caret">test</span></li>
                     <ul class="nested">
-                        <li><span class="caret"><strong>or: </strong>Application wise object locators</span></li>
-                        <li><span class="caret"><strong>stepdef: </strong>Step definition mapping for feature file</span></li>
-                        <li><span class="caret"><strong>testcase: </strong>Cucumber TestRunner</span></li>
+                        <li><span class="caret"><strong>or: </strong>Application wise object locators.</span></li>
+                        <li><span class="caret"><strong>stepdef: </strong>Step definition mapping for feature file.</span></li>
+                        <li><span class="caret"><strong>testcase: </strong>Cucumber Test Runner.</span></li>
                     </ul>
                 </ul>
                 <li>resources</li>
                 <ul class="nested">
-	                <li><span class="caret"><strong>configuration: </strong>Test-bed and application properties</span></li>
-                    <li><span class="caret"><strong>features: </strong>Scenario feature files</span></li>
-                    <li><span class="caret"><strong>Log4j2: </strong>Execution log properties</span></li>
+	                <li><span class="caret"><strong>configuration: </strong>Test-bed and application properties.</span></li>
+                    <li><span class="caret"><strong>features: </strong>Scenario feature files.</span></li>
+                    <li><span class="caret"><strong>Log4j2: </strong>Execution log properties.</span></li>
                 </ul>
             </ul>
         </li>
         </ul>
     </li>
 </ul>
-
 
 ### Pre-requisite (IDE and Test Bed): ###
 * IntelliJ IDEA 2021.2.1 (Community Edition)
@@ -85,8 +83,8 @@ Test Task  is developed using Selenium-Cucumber-java.
 TestRunner file is available on path <b>"src\test\java\com\test\task\testcase\"</b>. Right click and choose option Run {*}Cucumber
 ### Check Test Report: ###
 <h6>Extent Report:</h6>results\reports\courgette-extentreports\
-<h6>Courgette Report:</h6>results\reports\courgette-report\
 
+<h6>Courgette Report:</h6>results\reports\courgette-report\
 ### Test Scenarios: ###
 <h4>Para Bank:</h4>
 <h6>Feature File:</h6> src\test\resources\features\ParaBank.feature
