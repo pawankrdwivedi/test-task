@@ -57,7 +57,7 @@ public class LumaSteps extends BaseStep {
         selActions.type(LumaOR.FIRST_NAME, (String) getScenarioContext().getContext(DataContext.USER_1_FIRST_NAME));
         selActions.type(LumaOR.LAST_NAME, (String) getScenarioContext().getContext(DataContext.USER_1_LAST_NAME));
         selActions.type(LumaOR.EMAIL, (String) getScenarioContext().getContext(DataContext.USER_1_EMAIL));
-        String password = (String) getScenarioContext().getContext(DataContext.USER_1_FIRST_NAME) + Utils.generateRandomNumber(10000, 99999);
+        String password = getScenarioContext().getContext(DataContext.USER_1_FIRST_NAME) + Utils.generateRandomNumber(10000, 99999);
         selActions.type(LumaOR.PASSWORD, password);
         selActions.type(LumaOR.CONFIRM_PASSWORD, password);
         selActions.click(LumaOR.CREATE_ACCOUNT_BUTTON);
@@ -84,17 +84,17 @@ public class LumaSteps extends BaseStep {
         selActions.click(LumaOR.SHOPPING_CART_LINK);
         Utils.wait(3);
         if (selActions.getText(LumaOR.HEADER_TAG).toLowerCase().contains("shopping cart")) {
-            ReportHelper.PASS("User " + getScenarioContext().getContext(DataContext.USER_1_EMAIL) + " registered successfully and 'My Account' page is displayed");
+            ReportHelper.PASS("'Item: '"+shoppingItem+" added successfully in Shopping Cart.");
         } else {
-            ReportHelper.FAIL("User " + getScenarioContext().getContext(DataContext.USER_1_EMAIL) + " is not registered and 'My Account' page is not displayed");
+            ReportHelper.FAIL("'Item: '"+shoppingItem+" is not added in Shopping Cart.");
         }
     }
     @And("clicks on 'Proceed to Checkout' button.")
     public void proceedToCheckout() throws Exception {
         selActions.waitTillElementIsClickable(LumaOR.PROCEED_TO_CHECKOUT_BUTTON);
         selActions.click(LumaOR.PROCEED_TO_CHECKOUT_BUTTON);
-        selActions.waitTillElementIsDisplayed(By.xpath("//div[@class='step-title']"));
-        if (selActions.getText(By.xpath("//div[@class='step-title']")).toLowerCase().contains("shipping address")) {
+        selActions.waitTillElementIsDisplayed(LumaOR.PAGE_TITLE);
+        if (selActions.getText(LumaOR.PAGE_TITLE).toLowerCase().contains("shipping address")) {
             ReportHelper.PASS("'Shipping Address' page is displayed");
         } else {
             ReportHelper.FAIL("'Shipping Address' page is not displayed");
@@ -120,8 +120,9 @@ public class LumaSteps extends BaseStep {
     }
     @Then("click on 'Place Order' button and verify order is placed successfully.")
     public void placeOrderAndVerify() throws Exception {
-        selActions.click(By.name("billing-address-same-as-shipping"));
-        selActions.click(By.xpath("//button[@title='Place Order']"));
+        //selActions.click(LumaOR.SELECT_CHECKBOX_PLACE_ORDER);
+        selActions.waitTillElementIsClickable(LumaOR.PLACE_ORDER);
+        selActions.click(LumaOR.PLACE_ORDER);
         Utils.wait(10);
         if (selActions.getText(LumaOR.HEADER_TAG).toLowerCase().contains("your purchase")) {
             ReportHelper.PASS("Order placed successfully");

@@ -1,0 +1,67 @@
+2022-11-05 22:08:24.101 [INFO ] -- CHROME Wedriver created.
+2022-11-05 22:08:29.042 [INFO ] -- URL opened: https://parabank.parasoft.com/parabank/index.htm
+2022-11-05 22:08:30.095 [INFO ] -- Element Collection identified in UI: By.id: headerPanel
+2022-11-05 22:08:30.096 [INFO ] -- Element: By.id: headerPanel is displayed on UI.
+2022-11-05 22:08:30.128 [INFO ] -- Element identified in UI: By.linkText: Register
+2022-11-05 22:08:30.700 [INFO ] -- Element is clicked.
+2022-11-05 22:08:30.723 [INFO ] -- Element identified in UI: By.tagName: h1
+2022-11-05 22:08:30.751 [INFO ] -- Element text on UI is: Signing up is easy!
+2022-11-05 22:08:30.771 [INFO ] -- Element identified in UI: By.id: customer.firstName
+2022-11-05 22:08:30.858 [INFO ] -- 'Irma' typed in element.
+2022-11-05 22:08:30.875 [INFO ] -- Element identified in UI: By.id: customer.lastName
+2022-11-05 22:08:30.967 [INFO ] -- 'Wade' typed in element.
+2022-11-05 22:08:30.990 [INFO ] -- Element identified in UI: By.id: customer.address.street
+2022-11-05 22:08:31.098 [INFO ] -- '3954 Locust Rd' typed in element.
+2022-11-05 22:08:31.122 [INFO ] -- Element identified in UI: By.id: customer.address.city
+2022-11-05 22:08:31.205 [INFO ] -- 'Mobile' typed in element.
+2022-11-05 22:08:31.227 [INFO ] -- Element identified in UI: By.id: customer.address.state
+2022-11-05 22:08:31.313 [INFO ] -- 'Washington' typed in element.
+2022-11-05 22:08:31.334 [INFO ] -- Element identified in UI: By.id: customer.address.zipCode
+2022-11-05 22:08:31.406 [INFO ] -- '98282' typed in element.
+2022-11-05 22:08:31.425 [INFO ] -- Element identified in UI: By.id: customer.phoneNumber
+2022-11-05 22:08:31.514 [INFO ] -- '(936) 286-3964' typed in element.
+2022-11-05 22:08:31.532 [INFO ] -- Element identified in UI: By.id: customer.ssn
+2022-11-05 22:08:31.599 [INFO ] -- '834089738' typed in element.
+2022-11-05 22:08:31.639 [INFO ] -- Element identified in UI: By.id: customer.username
+2022-11-05 22:08:31.722 [INFO ] -- 'Irma21946' typed in element.
+2022-11-05 22:08:31.739 [INFO ] -- Element identified in UI: By.id: customer.password
+2022-11-05 22:08:31.819 [INFO ] -- 'Irma21946' typed in element.
+2022-11-05 22:08:31.840 [INFO ] -- Element identified in UI: By.id: repeatedPassword
+2022-11-05 22:08:31.928 [INFO ] -- 'Irma21946' typed in element.
+2022-11-05 22:08:31.952 [INFO ] -- Element identified in UI: By.xpath: //input[@value='Register']
+2022-11-05 22:08:33.232 [INFO ] -- Element is clicked.
+2022-11-05 22:08:33.245 [INFO ] -- Element identified in UI: By.tagName: h1
+2022-11-05 22:08:33.270 [INFO ] -- Element text on UI is: Welcome Irma21946
+2022-11-05 22:08:33.283 [INFO ] -- Element identified in UI: By.linkText: Bill Pay
+2022-11-05 22:08:33.820 [INFO ] -- Element is clicked.
+2022-11-05 22:08:33.840 [INFO ] -- Element identified in UI: By.tagName: h1
+2022-11-05 22:08:33.859 [INFO ] -- Element text on UI is: Bill Payment Service
+2022-11-05 22:08:33.865 [INFO ] -- Element identified in UI: By.name: payee.name
+2022-11-05 22:08:33.989 [INFO ] -- 'Wendy Ellis' typed in element.
+2022-11-05 22:08:34.007 [INFO ] -- Element identified in UI: By.name: payee.address.street
+2022-11-05 22:08:34.134 [INFO ] -- '41 Locust Rd' typed in element.
+2022-11-05 22:08:34.160 [INFO ] -- Element identified in UI: By.name: payee.address.city
+2022-11-05 22:08:34.280 [INFO ] -- 'Lewisville' typed in element.
+2022-11-05 22:08:34.305 [INFO ] -- Element identified in UI: By.name: payee.address.state
+2022-11-05 22:08:34.422 [INFO ] -- 'Virginia' typed in element.
+2022-11-05 22:08:34.431 [INFO ] -- Element identified in UI: By.name: payee.address.zipCode
+2022-11-05 22:08:34.536 [INFO ] -- '88516' typed in element.
+2022-11-05 22:08:34.555 [INFO ] -- Element identified in UI: By.name: payee.phoneNumber
+2022-11-05 22:08:34.666 [INFO ] -- '(511) 439-1370' typed in element.
+2022-11-05 22:08:34.684 [INFO ] -- Element identified in UI: By.name: payee.accountNumber
+2022-11-05 22:08:34.768 [INFO ] -- '1398240111' typed in element.
+2022-11-05 22:08:34.782 [INFO ] -- Element identified in UI: By.name: verifyAccount
+2022-11-05 22:08:34.886 [INFO ] -- '1398240111' typed in element.
+2022-11-05 22:08:34.901 [INFO ] -- Element identified in UI: By.name: amount
+2022-11-05 22:08:34.988 [INFO ] -- '80043' typed in element.
+2022-11-05 22:08:35.008 [INFO ] -- Element identified in UI: By.xpath: //input[@value='Send Payment']
+2022-11-05 22:08:35.060 [INFO ] -- Element is clicked.
+2022-11-05 22:08:36.115 [INFO ] -- Element Collection identified in UI: By.xpath: //div[@ng-show='showResult']/h1
+2022-11-05 22:08:36.115 [INFO ] -- Element: By.xpath: //div[@ng-show='showResult']/h1 is displayed on UI.
+2022-11-05 22:08:36.115 [INFO ] -- Element identified in UI: By.xpath: //div[@ng-show='showResult']/h1
+2022-11-05 22:08:36.131 [INFO ] -- Element text on UI is: Bill Payment Complete
+2022-11-05 22:08:36.146 [INFO ] -- Element identified in UI: By.id: payeeName
+2022-11-05 22:08:36.162 [INFO ] -- Element text on UI is: Wendy Ellis
+2022-11-05 22:08:36.178 [INFO ] -- Element identified in UI: By.id: amount
+2022-11-05 22:08:36.193 [INFO ] -- Element text on UI is: $80043.00
+2022-11-05 22:08:36.928 [INFO ] -- Web Driver closed.
