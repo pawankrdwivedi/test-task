@@ -1,0 +1,52 @@
+2022-11-05 04:44:54.281 [INFO ] -- CHROME Wedriver created.
+2022-11-05 04:44:55.870 [INFO ] -- URL opened: https://magento.softwaretestingboard.com/
+2022-11-05 04:44:56.907 [INFO ] -- Element Collection identified in UI: By.xpath: //a[@aria-label='store logo']
+2022-11-05 04:44:56.907 [INFO ] -- Element: By.xpath: //a[@aria-label='store logo'] is displayed on UI.
+2022-11-05 04:44:56.934 [INFO ] -- Element identified in UI: By.linkText: Create an Account
+2022-11-05 04:44:58.185 [INFO ] -- Element is clicked.
+2022-11-05 04:44:58.264 [INFO ] -- Element identified in UI: By.xpath: //h1/span
+2022-11-05 04:44:58.309 [INFO ] -- Element text on UI is: Create New Customer Account
+2022-11-05 04:44:58.330 [INFO ] -- Element identified in UI: By.id: firstname
+2022-11-05 04:44:58.468 [INFO ] -- 'Gregory' typed in element.
+2022-11-05 04:44:58.502 [INFO ] -- Element identified in UI: By.id: lastname
+2022-11-05 04:44:58.590 [INFO ] -- 'Jensen' typed in element.
+2022-11-05 04:44:58.610 [INFO ] -- Element identified in UI: By.id: email_address
+2022-11-05 04:44:58.762 [INFO ] -- 'gregory.jensen@example.com' typed in element.
+2022-11-05 04:44:58.784 [INFO ] -- Element identified in UI: By.id: password
+2022-11-05 04:44:58.909 [INFO ] -- 'Gregory30843' typed in element.
+2022-11-05 04:44:58.924 [INFO ] -- Element identified in UI: By.id: password-confirmation
+2022-11-05 04:44:59.024 [INFO ] -- 'Gregory30843' typed in element.
+2022-11-05 04:44:59.038 [INFO ] -- Element identified in UI: By.xpath: //button[@title='Create an Account']/span
+2022-11-05 04:45:03.738 [INFO ] -- Element is clicked.
+2022-11-05 04:45:03.780 [INFO ] -- Element identified in UI: By.xpath: //h1/span
+2022-11-05 04:45:03.842 [INFO ] -- Element text on UI is: My Account
+2022-11-05 04:45:03.884 [INFO ] -- Element identified in UI: By.id: search
+2022-11-05 04:45:04.048 [INFO ] -- 'pants' typed in element.
+2022-11-05 04:45:04.067 [INFO ] -- Element identified in UI: By.xpath: //button[@title='Search']
+2022-11-05 04:45:06.341 [INFO ] -- Element is clicked.
+2022-11-05 04:45:06.406 [INFO ] -- Element Collection identified in UI: By.xpath: //li[contains(@class,'product-item')]
+2022-11-05 04:45:07.468 [INFO ] -- Element is clicked.
+2022-11-05 04:45:10.489 [INFO ] -- Element identified in UI: By.xpath: //div[@option-label='32']
+2022-11-05 04:45:10.580 [INFO ] -- Element is clicked.
+2022-11-05 04:45:12.583 [INFO ] -- Element identified in UI: By.xpath: //div[@option-label='Blue']
+2022-11-05 04:45:12.706 [INFO ] -- Element is clicked.
+2022-11-05 04:45:14.731 [INFO ] -- Element identified in UI: By.id: product-addtocart-button
+2022-11-05 04:45:14.797 [INFO ] -- Element is clicked.
+2022-11-05 04:45:18.993 [INFO ] -- Element Collection identified in UI: By.xpath: //a[text()='shopping cart']
+2022-11-05 04:45:18.993 [INFO ] -- Element: By.xpath: //a[text()='shopping cart'] is displayed on UI.
+2022-11-05 04:45:19.009 [INFO ] -- Element identified in UI: By.xpath: //a[text()='shopping cart']
+2022-11-05 04:45:23.165 [INFO ] -- Element is clicked.
+2022-11-05 04:45:26.186 [INFO ] -- Element identified in UI: By.xpath: //h1/span
+2022-11-05 04:45:26.202 [INFO ] -- Element text on UI is: Shopping Cart
+2022-11-05 04:45:27.243 [INFO ] -- Element Collection identified in UI: By.xpath: //button[@title='Proceed to Checkout']/span
+2022-11-05 04:45:27.244 [INFO ] -- Element: By.xpath: //button[@title='Proceed to Checkout']/span is displayed on UI.
+2022-11-05 04:45:27.256 [INFO ] -- Element identified in UI: By.xpath: //button[@title='Proceed to Checkout']/span
+2022-11-05 04:45:27.312 [INFO ] -- Element identified in UI: By.xpath: //button[@title='Proceed to Checkout']/span
+2022-11-05 04:48:27.338 [FATAL] -- Unable to click element. java.util.concurrent.TimeoutException
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5819d0193fe0d9035ac37e33bcf8e0e2, clickElement {id=668afe45-5231-48ad-b728-565780e27d11}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61515/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5819d0193fe0d9035ac37e33bcf8e0e2)] -> xpath: //button[@title='Proceed to Checkout']/span]
+Session ID: 5819d0193fe0d9035ac37e33bcf8e0e2
