@@ -21,6 +21,16 @@ Test Task  is developed using Selenium-Cucumber-java.
 * Parallel execution(Feature/Scenario level).
 * Re-execution of failed scenarios.
 * Test data sharing between scenario steps.
+### Pre-requisite: ###
+* IntelliJ IDEA 2021.2.1 (Community Edition)
+* JDK 11.0.9
+* Chrome browser
+### Execute Test: ###
+TestRunner file is available on path <b>"src\test\java\com\test\task\testcase\"</b>. Right click and choose option Run--> {*}Cucumber
+### Test Report Location: ###
+<h6>Extent Report:</h6>results\reports\courgette-extentreports\
+
+<h6>Courgette Report:</h6>results\reports\courgette-report\
 ### Framework Description: ###
 <ul id="myUL">
     <li><span class="caret">results</span>
@@ -75,16 +85,6 @@ Test Task  is developed using Selenium-Cucumber-java.
     </li>
 </ul>
 
-### Pre-requisite (IDE and Test Bed): ###
-* IntelliJ IDEA 2021.2.1 (Community Edition)
-* JDK 11.0.9
-* Chrome browser
-### Execute Test: ###
-TestRunner file is available on path <b>"src\test\java\com\test\task\testcase\"</b>. Right click and choose option Run {*}Cucumber
-### Check Test Report: ###
-<h6>Extent Report:</h6>results\reports\courgette-extentreports\
-
-<h6>Courgette Report:</h6>results\reports\courgette-report\
 ### Test Scenarios: ###
 <h4>Para Bank:</h4>
 <h6>Feature File:</h6> src\test\resources\features\ParaBank.feature
