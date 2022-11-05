@@ -1,5 +1,5 @@
-# Unlimint Test Task #
-Purpose of this README is to provide overview of framework(created for test tak), environment required, how
+# Test Task #
+Purpose of this README is to provide overview of framework(created for test task), environment required, how
 to execute scenarios and view report.
 ### Overview: ###
 Test Task  is developed using Selenium-Cucumber-java.
@@ -17,8 +17,8 @@ Test Task  is developed using Selenium-Cucumber-java.
 * Log4j
 ### Feature: ###
 * BDD framework (test scenarios written in business readable language{Gherkin}).
-* Test Reporting using Courgette Cucumber Report and Extent Reports.
-* Parallel Execution(Feature/Scenario level).
+* Test reporting using Courgette and Extent Reports.
+* Parallel execution(Feature/Scenario level).
 * Re-Execution of failed scenarios.
 * Test data sharing between scenario steps.
 
