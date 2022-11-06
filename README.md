@@ -1,5 +1,5 @@
 # Test Task #
-Purpose of this README is to provide overview of framework(created for test task), environment setup, scenario execution workflow and analyze reports.
+Purpose of this README is to provide overview of framework (created for test task), environment setup, scenario execution workflow and analyze reports.
 ### Overview: ###
 Test Task  is developed using Selenium-Cucumber-java.
 * Web Driver Manager manages selenium web-driver (download, setup, and maintenance).
